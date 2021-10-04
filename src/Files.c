@@ -31,9 +31,9 @@ static ERROR_CODE fileFound(FILE *file){
 
 
 FILE* newFile(char* fileName, char *mode){
-    
+
     FILE* myFile = NULL;
-    
+
     myFile = fopen(fileName, mode);
     fprintf(stderr, "%p\n",myFile);
     if(fileFound(myFile)==FILE_NOT_FOUND){
